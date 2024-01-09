@@ -3,9 +3,9 @@
 //
 
 #include "mainTUI.h"
+#include "../Finder.cpp"
 #include <ftxui/dom/elements.hpp>
 #include <ftxui/screen/screen.hpp>
-#include <iostream>
 
 using namespace ftxui;
 
@@ -19,6 +19,7 @@ int mainTUI() {
                                  Dimension::Fit(header));
 
     Render(screen, header);
+
     screen.Print();
 
     return EXIT_SUCCESS;

@@ -22,6 +22,10 @@ endif()
 add_executable(KiPlay main.cpp
         UI/mainTUI.cpp
         UI/mainTUI.h
+        MusicFile.cpp
+        MusicFile.h
+        Finder.cpp
+        Finder.h
 )
 
 target_link_libraries(KiPlay
