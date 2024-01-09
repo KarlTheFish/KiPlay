@@ -1,6 +1,5 @@
-#include <iostream>
+#include "UI/mainTUI.h"
 
 int main() {
-    std::cout << "Welcome to KiPlay, a CLI-based music player and organizer!" << std::endl;
-    return 0;
+    mainTUI();
 }
