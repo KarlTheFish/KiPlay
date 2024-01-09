@@ -6,7 +6,7 @@
 #include "Finder.h"
 #include <ftxui/dom/elements.hpp>
 #include <string>
-#include <cstdio>
+#include <iostream>
 
 using namespace ftxui;
 using namespace std;
@@ -18,17 +18,21 @@ public:
         return finderWindow;
     }
     string Search(string path){
-        string command = "find " + path + " -name \"*.mp3\"";
+        int foundFiles = 0;
+        string command = "find " + path + " -name \"*.mp3\" -printf \"%P\\n\"";
         FILE* pipe = popen(command.c_str(), "r");
         if(!pipe) return "ERROR";
         char buffer[128];
         string result = "";
         while(!feof(pipe)){
             if(fgets(buffer, 128, pipe) != NULL){
+                foundFiles++;
+                //result = result + to_string(foundFiles) + ". ";
                 result += buffer;
             }
         }
         pclose(pipe);
+        std::cout << "Found " << foundFiles << " files" << std::endl;
         return result;
     }
 };
