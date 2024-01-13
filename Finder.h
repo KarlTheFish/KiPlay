@@ -7,6 +7,5 @@
 
 #include <ftxui/dom/elements.hpp>
 
-    ftxui::Element FinderWindow();
     std::string Search(std::string path);
 #endif //KIPLAY_FINDER_H

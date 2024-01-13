@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="KiPlay"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\ftxui-src\;CMake Files\cmake-build-debug\_deps\ftxui-src\cmake\;CMake Files\cmake-build-debug\_deps\ftxui-src\examples\;CMake Files\cmake-build-debug\_deps\ftxui-src\doc\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="KiPlay">
+				<Option output="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/KiPlay" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 KiPlay"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="KiPlay/fast">
+				<Option output="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/KiPlay" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 KiPlay/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="screen">
+				<Option output="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/libftxui-screen.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src"/>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 screen"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="screen/fast">
+				<Option output="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/libftxui-screen.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src"/>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 screen/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dom">
+				<Option output="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/libftxui-dom.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src"/>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 dom"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dom/fast">
+				<Option output="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/libftxui-dom.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src"/>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 dom/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="component">
+				<Option output="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/libftxui-component.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src"/>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 component"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="component/fast">
+				<Option output="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/libftxui-component.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src"/>
+					<Add directory="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 component/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/Finder.cpp">
+			<Option target="KiPlay"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/Finder.h">
+			<Option target="KiPlay"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/MusicFile.cpp">
+			<Option target="KiPlay"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/MusicFile.h">
+			<Option target="KiPlay"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/component/animation.hpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/component/captured_mouse.hpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/component/component.hpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/component/component_base.hpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/component/component_options.hpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/component/event.hpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/component/loop.hpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/component/mouse.hpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/component/receiver.hpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/component/screen_interactive.hpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/component/task.hpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/dom/canvas.hpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/dom/direction.hpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/dom/elements.hpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/dom/flexbox_config.hpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/dom/node.hpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/dom/requirement.hpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/dom/take_any_args.hpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/screen/box.hpp">
+			<Option target="screen"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/screen/color.hpp">
+			<Option target="screen"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/screen/color_info.hpp">
+			<Option target="screen"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/screen/screen.hpp">
+			<Option target="screen"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/include/ftxui/screen/string.hpp">
+			<Option target="screen"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/animation.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/button.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/catch_event.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/checkbox.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/collapsible.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/component.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/component_options.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/container.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/dropdown.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/event.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/hoverable.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/input.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/loop.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/maybe.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/menu.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/modal.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/radiobox.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/renderer.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/resizable_split.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/screen_interactive.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/slider.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/terminal_input_parser.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/terminal_input_parser.hpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/util.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/component/window.cpp">
+			<Option target="component"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/automerge.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/blink.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/bold.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/border.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/box_helper.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/box_helper.hpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/canvas.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/clear_under.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/color.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/composite_decorator.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/dbox.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/dim.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/flex.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/flexbox.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/flexbox_config.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/flexbox_helper.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/flexbox_helper.hpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/focus.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/frame.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/gauge.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/graph.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/gridbox.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/hbox.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/hyperlink.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/inverted.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/linear_gradient.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/node.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/node_decorator.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/node_decorator.hpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/paragraph.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/reflect.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/scroll_indicator.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/separator.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/size.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/spinner.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/strikethrough.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/table.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/text.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/underlined.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/underlined_double.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/util.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/dom/vbox.cpp">
+			<Option target="dom"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/screen/box.cpp">
+			<Option target="screen"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/screen/color.cpp">
+			<Option target="screen"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/screen/color_info.cpp">
+			<Option target="screen"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/screen/screen.cpp">
+			<Option target="screen"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/screen/string.cpp">
+			<Option target="screen"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/screen/terminal.cpp">
+			<Option target="screen"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/src/ftxui/screen/util.hpp">
+			<Option target="screen"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/main.cpp">
+			<Option target="KiPlay"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/ftxui.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/cmake/ftxui-config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/cmake/ftxui_benchmark.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/cmake/ftxui_coverage.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/cmake/ftxui_export.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/cmake/ftxui_fuzzer.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/cmake/ftxui_install.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/cmake/ftxui_message.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/cmake/ftxui_package.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/cmake/ftxui_set_options.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/cmake/ftxui_test.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/cmake/iwyu.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\examples\"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/cmake-build-debug/_deps/ftxui-src/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\ftxui-src\doc\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

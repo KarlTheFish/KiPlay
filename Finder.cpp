@@ -13,26 +13,46 @@ using namespace std;
 
 class Finder{
 public:
-    ftxui::Element FinderWindow(){
-        Element finderWindow = hbox(text("Test"));
-        return finderWindow;
+    int Main(){
+        string path;
+        vector<string> results;
+
+        std::cout << "Enter path to directory to be searched: ";
+        std::cin >> path;
+        results = Search(path);
+        AddSongs(results);
     }
-    string Search(string path){
+private:
+    vector<string> Search(string path){
         int foundFiles = 0;
         string command = "find " + path + " -name \"*.mp3\" -printf \"%P\\n\"";
         FILE* pipe = popen(command.c_str(), "r");
-        if(!pipe) return "ERROR";
+        if(!pipe){
+            std::cout << "Unexpected error occurred, exiting program." << std::endl;
+            exit(1);
+        }
         char buffer[128];
-        string result = "";
+        string foundFile;
+        vector<string> result;
         while(!feof(pipe)){
             if(fgets(buffer, 128, pipe) != NULL){
                 foundFiles++;
-                //result = result + to_string(foundFiles) + ". ";
-                result += buffer;
+                std::cout << foundFiles << ". " << buffer << std::endl;
+                result.emplace_back(buffer);
             }
         }
         pclose(pipe);
         std::cout << "Found " << foundFiles << " files" << std::endl;
         return result;
+    }
+    void AddSongs(const vector<string>& results){
+        cout << "Enter the number in front of the song you'd like to add into your library. Enter '0' to finish adding songs." << endl;
+        int userSongIndex = 0;
+        cin >> userSongIndex;
+        while(userSongIndex != 0){
+            cout << results.at(userSongIndex - 1) << endl;
+            cout << "Enter the number of the next song to add or '0' to finish adding songs" << endl;
+            cin >> userSongIndex;
+        }
     }
 };
