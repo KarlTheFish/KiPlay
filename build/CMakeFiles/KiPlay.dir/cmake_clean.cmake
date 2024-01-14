@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/KiPlay.dir/DatabaseActions.cpp.o"
+  "CMakeFiles/KiPlay.dir/DatabaseActions.cpp.o.d"
   "CMakeFiles/KiPlay.dir/Finder.cpp.o"
   "CMakeFiles/KiPlay.dir/Finder.cpp.o.d"
   "CMakeFiles/KiPlay.dir/MusicFile.cpp.o"

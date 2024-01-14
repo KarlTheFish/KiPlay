@@ -18,15 +18,21 @@ if(NOT ftxui_POPULATED)
     add_subdirectory(${ftxui_SOURCE_DIR} ${ftxui_BINARY_DIR} EXCLUDE_FROM_ALL)
 endif()
 #----------------
+#-----SQLITE3----
+find_package(SQLite3 REQUIRED)
+#----------------
 
 add_executable(KiPlay main.cpp
         MusicFile.cpp
         MusicFile.h
         Finder.cpp
         Finder.h
+        DatabaseActions.cpp
+        DatabaseActions.h
 )
 
 target_link_libraries(KiPlay
     PRIVATE ftxui::screen
     PRIVATE ftxui::dom
-    PRIVATE ftxui::component)
+    PRIVATE ftxui::component
+    PRIVATE SQLite::SQLite3)

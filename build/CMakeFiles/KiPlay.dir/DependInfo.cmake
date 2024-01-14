@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/karl-aleksander/CLionProjects/KiPlay/DatabaseActions.cpp" "CMakeFiles/KiPlay.dir/DatabaseActions.cpp.o" "gcc" "CMakeFiles/KiPlay.dir/DatabaseActions.cpp.o.d"
   "/home/karl-aleksander/CLionProjects/KiPlay/Finder.cpp" "CMakeFiles/KiPlay.dir/Finder.cpp.o" "gcc" "CMakeFiles/KiPlay.dir/Finder.cpp.o.d"
   "/home/karl-aleksander/CLionProjects/KiPlay/MusicFile.cpp" "CMakeFiles/KiPlay.dir/MusicFile.cpp.o" "gcc" "CMakeFiles/KiPlay.dir/MusicFile.cpp.o.d"
   "/home/karl-aleksander/CLionProjects/KiPlay/main.cpp" "CMakeFiles/KiPlay.dir/main.cpp.o" "gcc" "CMakeFiles/KiPlay.dir/main.cpp.o.d"

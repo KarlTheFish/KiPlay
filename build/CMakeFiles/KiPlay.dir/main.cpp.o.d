@@ -232,4 +232,10 @@ CMakeFiles/KiPlay.dir/main.cpp.o: \
  /home/karl-aleksander/CLionProjects/KiPlay/build/_deps/ftxui-src/include/ftxui/dom/deprecated.hpp \
  /home/karl-aleksander/CLionProjects/KiPlay/Finder.cpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc \
+ /home/karl-aleksander/CLionProjects/KiPlay/MusicFile.cpp \
+ /home/karl-aleksander/CLionProjects/KiPlay/MusicFile.h \
+ /usr/include/sqlite3.h \
+ /home/karl-aleksander/CLionProjects/KiPlay/DatabaseActions.cpp \
+ /home/karl-aleksander/CLionProjects/KiPlay/DatabaseActions.h

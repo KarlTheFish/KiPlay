@@ -172,6 +172,21 @@
 			"path" : "/snap/clion/261/bin/cmake/linux/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in"
 		},
 		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/261/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindSQLite3.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/261/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/261/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+		},
+		{
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/_deps/ftxui-src/CMakeLists.txt"
 		},

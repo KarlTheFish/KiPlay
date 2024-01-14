@@ -1,6 +1,7 @@
 #include "Finder.h"
 #include "Finder.cpp"
 #include <iostream>
+#include "DatabaseActions.cpp"
 
 using namespace ftxui;
 
@@ -24,6 +25,19 @@ int main() {
     return EXIT_SUCCESS;
 }
 
+//Don't know why it wants me to do this, but it won't work otherwise
+void find(){
+    Finder finder;
+    finder.Main();
+}
+
+void exit(){
+    DBconnection connection{};
+    connection.Close();
+    std::cout << "Bye-bye!" << std::endl;
+    exit(EXIT_SUCCESS);
+}
+
 void actions(){
     Element ActionMenu = vbox({
         center(text("What would you like to do?")),
@@ -37,13 +51,17 @@ void actions(){
     action = tolower((int)action);
     switch(action){
         case 'q':
-            std::cout << "Bye-bye!" << std::endl;
-            exit(EXIT_SUCCESS);
+            exit();
             break;
         case 'f':
-            Finder finder;
-            finder.Main();
+            find();
+            action = ' ';
+            break;
+        case 'w':
+            SearchDB search("test");
+            search.Exists();
             action = ' ';
             break;
     }
 }
+

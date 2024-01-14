@@ -7,25 +7,29 @@
 #include <ftxui/dom/elements.hpp>
 #include <string>
 #include <iostream>
+#include <sstream>
+#include "MusicFile.cpp"
+#include <sqlite3.h>
 
 using namespace ftxui;
 using namespace std;
 
 class Finder{
 public:
+    string Path;
+
     int Main(){
-        string path;
         vector<string> results;
 
         std::cout << "Enter path to directory to be searched: ";
-        std::cin >> path;
-        results = Search(path);
+        std::cin >> Path;
+        results = Search();
         AddSongs(results);
     }
 private:
-    vector<string> Search(string path){
+    vector<string> Search(){
         int foundFiles = 0;
-        string command = "find " + path + " -name \"*.mp3\" -printf \"%P\\n\"";
+        string command = "find " + Path + " -name \"*.mp3\" -printf \"%P\\n\"";
         FILE* pipe = popen(command.c_str(), "r");
         if(!pipe){
             std::cout << "Unexpected error occurred, exiting program." << std::endl;
@@ -42,15 +46,38 @@ private:
             }
         }
         pclose(pipe);
-        std::cout << "Found " << foundFiles << " files" << std::endl;
+        std::cout << "Found " << foundFiles << " new files" << std::endl;
         return result;
     }
     void AddSongs(const vector<string>& results){
+        string SongName;
+        string ArtistName;
+        string filePath;
+        string userChoice;
         cout << "Enter the number in front of the song you'd like to add into your library. Enter '0' to finish adding songs." << endl;
         int userSongIndex = 0;
         cin >> userSongIndex;
+        userChoice = results.at(userSongIndex - 1);
+        cout << userChoice << endl;
         while(userSongIndex != 0){
-            cout << results.at(userSongIndex - 1) << endl;
+            filePath = Path + userChoice;
+            cout << "Enter song name(Default is filename):";
+            std::getline(cin >> ws, SongName);
+            if(SongName.empty()){
+                //Set filename to whatever comes after the last / character
+                stringstream SS(userChoice);
+                string segment;
+                while(getline(SS, segment, '/')){
+                    SongName = segment;
+                }
+            }
+            cout << endl << "Enter the artist(Default is Unknown):";
+            std::getline(cin >> ws, ArtistName);
+            if(ArtistName.empty()){
+                ArtistName = "Unknown";
+            }
+            MusicFile musicFile = SongBuilder().setFilepath(filePath).setName(SongName).setArtist(ArtistName).build();
+            musicFile.ShowData();
             cout << "Enter the number of the next song to add or '0' to finish adding songs" << endl;
             cin >> userSongIndex;
         }

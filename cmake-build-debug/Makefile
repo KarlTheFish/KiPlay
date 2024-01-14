@@ -233,6 +233,30 @@ component/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/ftxui-build/CMakeFiles/component.dir/build.make _deps/ftxui-build/CMakeFiles/component.dir/build
 .PHONY : component/fast
 
+DatabaseActions.o: DatabaseActions.cpp.o
+.PHONY : DatabaseActions.o
+
+# target to build an object file
+DatabaseActions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KiPlay.dir/build.make CMakeFiles/KiPlay.dir/DatabaseActions.cpp.o
+.PHONY : DatabaseActions.cpp.o
+
+DatabaseActions.i: DatabaseActions.cpp.i
+.PHONY : DatabaseActions.i
+
+# target to preprocess a source file
+DatabaseActions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KiPlay.dir/build.make CMakeFiles/KiPlay.dir/DatabaseActions.cpp.i
+.PHONY : DatabaseActions.cpp.i
+
+DatabaseActions.s: DatabaseActions.cpp.s
+.PHONY : DatabaseActions.s
+
+# target to generate assembly for a file
+DatabaseActions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KiPlay.dir/build.make CMakeFiles/KiPlay.dir/DatabaseActions.cpp.s
+.PHONY : DatabaseActions.cpp.s
+
 Finder.o: Finder.cpp.o
 .PHONY : Finder.o
 
@@ -323,6 +347,9 @@ help:
 	@echo "... component"
 	@echo "... dom"
 	@echo "... screen"
+	@echo "... DatabaseActions.o"
+	@echo "... DatabaseActions.i"
+	@echo "... DatabaseActions.s"
 	@echo "... Finder.o"
 	@echo "... Finder.i"
 	@echo "... Finder.s"

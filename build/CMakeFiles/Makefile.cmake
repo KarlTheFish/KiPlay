@@ -51,6 +51,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/cmake/1361/share/cmake-3.28/Modules/FindGit.cmake"
   "/snap/cmake/1361/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
   "/snap/cmake/1361/share/cmake-3.28/Modules/FindPackageMessage.cmake"
+  "/snap/cmake/1361/share/cmake-3.28/Modules/FindSQLite3.cmake"
   "/snap/cmake/1361/share/cmake-3.28/Modules/FindThreads.cmake"
   "/snap/cmake/1361/share/cmake-3.28/Modules/GNUInstallDirs.cmake"
   "/snap/cmake/1361/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake"

@@ -1,7 +1,8 @@
-CMakeFiles/KiPlay.dir/MusicFile.cpp.o: \
- /home/karl-aleksander/CLionProjects/KiPlay/MusicFile.cpp \
+CMakeFiles/KiPlay.dir/DatabaseActions.cpp.o: \
+ /home/karl-aleksander/CLionProjects/KiPlay/DatabaseActions.cpp \
  /usr/include/stdc-predef.h \
- /home/karl-aleksander/CLionProjects/KiPlay/MusicFile.h \
+ /home/karl-aleksander/CLionProjects/KiPlay/DatabaseActions.h \
+ /usr/include/sqlite3.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -44,7 +45,6 @@ CMakeFiles/KiPlay.dir/MusicFile.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \

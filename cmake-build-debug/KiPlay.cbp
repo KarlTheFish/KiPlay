@@ -288,6 +288,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/DatabaseActions.cpp">
+			<Option target="KiPlay"/>
+		</Unit>
+		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/DatabaseActions.h">
+			<Option target="KiPlay"/>
+		</Unit>
 		<Unit filename="/home/karl-aleksander/CLionProjects/KiPlay/Finder.cpp">
 			<Option target="KiPlay"/>
 		</Unit>
