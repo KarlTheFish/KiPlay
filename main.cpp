@@ -1,7 +1,7 @@
 #include "Finder.h"
 #include "Finder.cpp"
 #include <iostream>
-#include "DatabaseActions.cpp"
+#include "Database.h"
 
 using namespace ftxui;
 
@@ -10,8 +10,12 @@ char action = ' ';
 void actions();
 
 int main() {
-    InitialDbTablecreation init;
-    init.SongTable();
+    Database database;
+
+    database.SongTable(); //Init
+
+    database.exists("Allan Roosileht", "artist", "Song");
+
     Element WelcomeText = center(text("Welcome to KiPlay!") | border);
 
     auto screen = Screen::Create(Dimension::Full(),
@@ -38,8 +42,6 @@ void find(){
 }
 
 void exit(){
-    DBconnection connection{};
-    connection.Close();
     std::cout << "Bye-bye!" << std::endl;
     exit(EXIT_SUCCESS);
 }

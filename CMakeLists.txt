@@ -27,8 +27,8 @@ add_executable(KiPlay main.cpp
         MusicFile.h
         Finder.cpp
         Finder.h
-        DatabaseActions.cpp
-        DatabaseActions.h
+        Database.cpp
+        Database.h
 )
 
 target_link_libraries(KiPlay

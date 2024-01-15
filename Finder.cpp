@@ -12,6 +12,7 @@
 #include "MusicFile.cpp"
 #include <sqlite3.h>
 #include <cstring>
+#include "Database.h"
 
 using namespace ftxui;
 using namespace std;
@@ -33,6 +34,7 @@ public:
         vector<string> result;
         while(!feof(pipe)){
             if(fgets(buffer, 512, pipe) != NULL){
+
                     foundFiles++;
                     std::cout << foundFiles << ". " << buffer << std::endl;
                     result.emplace_back(buffer);
@@ -44,6 +46,7 @@ public:
         return result;
     }
     void AddSongs(const vector<string>& results){
+        Database database;
         string SongName;
         string ArtistName;
         string filePath;
@@ -72,6 +75,9 @@ public:
             }
             MusicFile musicFile = SongBuilder().setFilepath(filePath).setName(SongName).setArtist(ArtistName).build();
             musicFile.ShowData();
+            if(!database.exists(filePath, "filepath", "Song")){ //If doesn't exist in the database already
+                database.AddSong(SongName, ArtistName, filePath);
+            }
             cout << "Enter the number of the next song to add or '0' to finish adding songs" << endl;
             cin >> userSongIndex;
             userChoice = results.at(userSongIndex - 1);
