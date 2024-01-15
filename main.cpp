@@ -14,8 +14,6 @@ int main() {
 
     database.SongTable(); //Init
 
-    database.exists("Allan Roosileht", "artist", "Song");
-
     Element WelcomeText = center(text("Welcome to KiPlay!") | border);
 
     auto screen = Screen::Create(Dimension::Full(),

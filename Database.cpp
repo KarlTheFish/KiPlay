@@ -84,6 +84,7 @@ bool Database::exists(std::string rowName, std::string columnName, std::string i
 }
 
 int Database::callback(void *data, int argc, char **argv, char **colNames) {
+    //Kui ma ärkan homme üles Seewaldis, on see funktsioon selle põhjuseks
     int i;
     string result;
     for (i = 0; i < argc; i++) {
