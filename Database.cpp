@@ -57,7 +57,7 @@ void Database::SongTable() {//If the table doesn't exist, create it
 
 bool Database::exists(std::string rowName, std::string columnName, std::string inTable) {
     Open();
-    statement = "SELECT EXISTS(SELECT 1 FROM " + inTable + " WHERE " + rowName + "=\"" + columnName + "\" LIMIT);";
+    statement = "SELECT EXISTS(SELECT 1 FROM " + inTable + " WHERE " + columnName + "='" + rowName + "');";
 
     errorInt = sqlite3_exec(db, statement.c_str(), callback, nullptr, errorMsg);
     if(errorInt != SQLITE_OK){
@@ -77,7 +77,7 @@ bool Database::exists(std::string rowName, std::string columnName, std::string i
         }
     }
     else{
-        cout << "Does not exist" << endl;
+        cout << "Results empty" << endl;
         return false;
     }
 
@@ -89,7 +89,8 @@ int Database::callback(void *data, int argc, char **argv, char **colNames) {
     for (i = 0; i < argc; i++) {
         //printf("%s = %s\n", colNames[i], argv[i] ? argv[i] : "NULL");
         //push back result to results vector
-        result = "%s = %s", colNames[i], argv[i] ? argv[i] : "NULL";
+        result;
+        cout << result << endl;
         DBresults.emplace_back(result);
         //Praying to god this works
     }
@@ -110,5 +111,3 @@ void Database::AddSong(std::string Title, std::string Artist, std::string Filepa
     }
     Close();
 }
-
-

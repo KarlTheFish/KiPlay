@@ -31,6 +31,7 @@ private:
 
     //Searching callback
     static int callback(void* data, int argc, char** argv, char** colNames);
+
 };
 
 

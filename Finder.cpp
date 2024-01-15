@@ -54,9 +54,9 @@ public:
         cout << "Enter the number in front of the song you'd like to add into your library. Enter '0' to finish adding songs." << endl;
         int userSongIndex = 0;
         cin >> userSongIndex;
-        userChoice = results.at(userSongIndex - 1);
-        cout << userChoice << endl;
         while(userSongIndex != 0){
+            userChoice = results.at(userSongIndex - 1);
+            cout << userChoice << endl;
             filePath = Path + userChoice;
             cout << "Enter song name(Default is filename):";
             std::getline(cin >> ws, SongName);
