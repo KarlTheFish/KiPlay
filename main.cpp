@@ -10,6 +10,8 @@ char action = ' ';
 void actions();
 
 int main() {
+    InitialDbTablecreation init;
+    init.SongTable();
     Element WelcomeText = center(text("Welcome to KiPlay!") | border);
 
     auto screen = Screen::Create(Dimension::Full(),
@@ -27,8 +29,12 @@ int main() {
 
 //Don't know why it wants me to do this, but it won't work otherwise
 void find(){
+    vector<string> results;
     Finder finder;
-    finder.Main();
+    cout << "Enter path to directory to be searched: ";
+    cin >> finder.Path;
+    results = finder.Search();
+    finder.AddSongs(results);
 }
 
 void exit(){
@@ -55,11 +61,6 @@ void actions(){
             break;
         case 'f':
             find();
-            action = ' ';
-            break;
-        case 'w':
-            SearchDB search("test");
-            search.Exists();
             action = ' ';
             break;
     }

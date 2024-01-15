@@ -8,8 +8,10 @@
 #include <string>
 #include <iostream>
 #include <sstream>
+#include <cstdio>
 #include "MusicFile.cpp"
 #include <sqlite3.h>
+#include <cstring>
 
 using namespace ftxui;
 using namespace std;
@@ -18,15 +20,6 @@ class Finder{
 public:
     string Path;
 
-    int Main(){
-        vector<string> results;
-
-        std::cout << "Enter path to directory to be searched: ";
-        std::cin >> Path;
-        results = Search();
-        AddSongs(results);
-    }
-private:
     vector<string> Search(){
         int foundFiles = 0;
         string command = "find " + Path + " -name \"*.mp3\" -printf \"%P\\n\"";
@@ -35,14 +28,15 @@ private:
             std::cout << "Unexpected error occurred, exiting program." << std::endl;
             exit(1);
         }
-        char buffer[128];
-        string foundFile;
+        char buffer[512];
+        string foundFile = "";
         vector<string> result;
         while(!feof(pipe)){
-            if(fgets(buffer, 128, pipe) != NULL){
-                foundFiles++;
-                std::cout << foundFiles << ". " << buffer << std::endl;
-                result.emplace_back(buffer);
+            if(fgets(buffer, 512, pipe) != NULL){
+                    foundFiles++;
+                    std::cout << foundFiles << ". " << buffer << std::endl;
+                    result.emplace_back(buffer);
+                    foundFile = "";
             }
         }
         pclose(pipe);
@@ -80,6 +74,14 @@ private:
             musicFile.ShowData();
             cout << "Enter the number of the next song to add or '0' to finish adding songs" << endl;
             cin >> userSongIndex;
+            userChoice = results.at(userSongIndex - 1);
+            cout << userChoice << endl;
+            if(userSongIndex == 0){
+                return;
+            }
+        }
+        if(userSongIndex == 0){
+            return;
         }
     }
 };

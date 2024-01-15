@@ -10,8 +10,8 @@
 using namespace std;
 
 class DBconnection{
-    sqlite3 *db;
 public:
+    sqlite3 *db;
     int Open(){
         char errorMsg = 0;
         int errorInt;
@@ -35,21 +35,48 @@ public:
 class SearchDB{
 public:
     string query;
+    DBconnection connection;
     //Constructor
     SearchDB(string query){
         this->query = query;
     }
 
     bool Exists(){
-        OpenDB();
+        connection.Open();
+
         return true;
     }
 
-private:
-    void OpenDB(){
-        DBconnection connection;
-        connection.Open();
-    }
 
+};
+
+class InitialDbTablecreation{
+public:
+    void SongTable(){ //If the table doesn't exist, create it
+        connection.Open();
+        statement = "CREATE TABLE IF NOT EXISTS Song("
+                    "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                    "title VARCHAR(1000) NOT NULL,"
+                    "artist VARCHAR(1000) NOT NULL,"
+                    "amountPlayed INT NOT NULL DEFAULT(0),"
+                    "filepath VARCHAR(1000) NOT NULL"
+                    ");";
+
+        char* errorMsg;
+        errorInt = sqlite3_exec(connection.db, statement.c_str(), NULL, 0, reinterpret_cast<char **>(errorMsg));
+
+        if(errorInt == SQLITE_OK){
+            cout << "All good!" << endl;
+            connection.Close();
+        }
+        else{
+            cout << "Error: " << errorInt << endl;
+        }
+    }
+private:
+    DBconnection connection;
+    int errorInt;
+    string statement;
+    //const char *statement;
 };
 
